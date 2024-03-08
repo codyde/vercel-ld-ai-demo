@@ -170,65 +170,6 @@ Besides that, you can also chat with users and do some calculations if needed.`,
     }
   });
 
-  //   completion.onFunctionCall("list_stocks", async ({ stocks }) => {
-  //     reply.update(
-  //       <BotCard>
-  //         <StocksSkeleton />
-  //       </BotCard>
-  //     );
-
-  //     await sleep(1000);
-
-  //     reply.done(
-  //       <BotCard>
-  //         <Stocks stocks={stocks} />
-  //       </BotCard>
-  //     );
-
-  //     aiState.done([
-  //       ...aiState.get(),
-  //       {
-  //         role: "function",
-  //         name: "list_stocks",
-  //         content: JSON.stringify(stocks),
-  //       },
-  //     ]);
-  //   });
-
-  //   completion.onFunctionCall("get_events", async ({ events }) => {
-  //     reply.update(
-  //       <BotCard>
-  //         <EventsSkeleton />
-  //       </BotCard>
-  //     );
-
-  //     await sleep(1000);
-
-  //     reply.done(
-  //       <BotCard>
-  //         <Events events={events} />
-  //       </BotCard>
-  //     );
-
-  //     aiState.done([
-  //       ...aiState.get(),
-  //       {
-  //         role: "function",
-  //         name: "list_stocks",
-  //         content: JSON.stringify(events),
-  //       },
-  //     ]);
-  //   });
-
-  //   completion.onFunctionCall("get_weather", async ({ weather }) => {
-  //     console.log("weather is going");
-  //     reply.update(
-  //       <BotCard>
-  //         <p>{weather}</p>
-  //       </BotCard>
-  //     );
-  //   });
-
   completion.onFunctionCall("create_project", async (input: any) => {
     const { projectName, projectKey } = input;
     const response = await CreateProject({
