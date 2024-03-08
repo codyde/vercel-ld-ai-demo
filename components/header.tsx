@@ -3,8 +3,6 @@ import Link from 'next/link';
 import {
   IconGitHub,
   IconSeparator,
-  IconSparkles,
-  IconVercel,
 } from '@/components/ui/icons';
 import { Button } from '@/components/ui/button';
 
