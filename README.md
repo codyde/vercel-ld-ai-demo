@@ -20,10 +20,10 @@ Running this is straight forward, create a `.env.local` file and add the followi
 
 ```
 OPENAI_API_KEY=
-LD_API_KEY=api-
+LD_API_KEY=
 NEXT_PUBLIC_LD_API_KEY=
 ```
 
 OpenAI API key is your OpenAI access key. The LD API key is your LD API key for the account you'd use to query. 
 
-Go forth and build! 
+Go forth and build!
